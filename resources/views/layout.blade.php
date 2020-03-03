@@ -26,13 +26,12 @@
 
 </head>
 <body>
+<a href="/create">글쓰기</a>
 <h1>@yield('sitetitle')</h1>
 <div id="cat_article">
     <div id="categories">
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+            @yield('categories')
         </ul>
     </div>
     <div id="articles">

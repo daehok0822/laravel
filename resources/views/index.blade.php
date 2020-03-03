@@ -8,11 +8,14 @@
 @endsection
 
 @section('categories')
-
+    @foreach($categories as $category)
+        <li>{{$category -> name}}</li>
+    @endforeach
 @endsection
-@section('articles')
 
+@section('articles')
     @foreach($articles as $article)
-        {{$article -> title}}
+        {{$article -> title}}<br>
+        {{$article -> description}}
     @endforeach
 @endsection
